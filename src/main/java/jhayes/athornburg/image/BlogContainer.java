@@ -9,6 +9,7 @@ import java.util.Observable;
 public interface BlogContainer{
 
     List<BlogPost> getPosts();
-    void addObserver(ObserverObject observer);
+    void setPostTextForPost(int id, String postText);
+
 
 }

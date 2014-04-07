@@ -18,6 +18,11 @@ public class BlogPostImpl implements BlogPost {
     }
 
     @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
     public String getPostText() {
         return postText;
     }
