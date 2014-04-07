@@ -8,6 +8,7 @@ import java.util.List;
 public interface BlogPost {
 
 
+    int getId();
 
     String getPostText();
     void setPostText(String post);

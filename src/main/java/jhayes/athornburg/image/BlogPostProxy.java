@@ -17,6 +17,11 @@ public class BlogPostProxy implements BlogPost{
     }
 
     @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
     public String getPostText() {
         if(post == null){
             try {
