@@ -26,3 +26,14 @@ The posts will print twice because when you use update the posts both observers 
 
 The Observer could have observed blogpost objects but we wanted to keep the two patterns separated from eachother
 in our example
+
+Running from the command line
+-----------------------------
+Execute the following commands
+```
+git clone https://github.com/athornburg/ProxyAndObserverExample.git
+cd ProxyAndObserverExample
+mvn clean
+mvn package
+sh target/bin/driver
+```
