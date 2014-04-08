@@ -25,6 +25,9 @@
         <module name="ImageLoader" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ImageLoader" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

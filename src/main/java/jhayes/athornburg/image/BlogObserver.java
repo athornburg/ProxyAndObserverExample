@@ -6,7 +6,7 @@ package jhayes.athornburg.image;
 public class BlogObserver implements  ObserverObject {
 
 
-    BlogContainerImpl container;
+    public BlogContainerImpl container;
 
     public BlogObserver(BlogContainerImpl container){
         this.container = container;

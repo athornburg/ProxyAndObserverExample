@@ -25,7 +25,7 @@ public class BlogPostProxy implements BlogPost{
     public String getPostText() {
         if(post == null){
             try {
-                post = dao.GetPost(id);
+                post = dao.getPost(id);
                 return post.getPostText();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -40,7 +40,7 @@ public class BlogPostProxy implements BlogPost{
     public void setPostText(String postText) {
         if(post == null){
             try {
-                post = dao.GetPost(id);
+                post = dao.getPost(id);
                 post.setPostText(postText);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -54,7 +54,7 @@ public class BlogPostProxy implements BlogPost{
     public List<byte[]> getImages() {
         if(post == null){
             try {
-                post = dao.GetPost(id);
+                post = dao.getPost(id);
                 return post.getImages();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -69,7 +69,7 @@ public class BlogPostProxy implements BlogPost{
     public void setImages(List<byte[]> images) {
         if(post == null){
             try {
-                post = dao.GetPost(id);
+                post = dao.getPost(id);
                 post.setImages(images);
             } catch (IOException e) {
                 e.printStackTrace();

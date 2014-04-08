@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * Created by john on 4/7/2014.
  */
@@ -17,16 +18,16 @@ public class MockDao {
 
     }
 
-    public BlogPost GetPost(int id) throws IOException {
+    public BlogPost getPost(int id) throws IOException {
         BlogPost post = new BlogPostImpl(id);
         post.setPostText("Post " + id);
-        post.setImages(GetImagesForPost(id));
+        post.setImages(getImagesForPost(id));
 
         return post;
 
     }
 
-    public List<byte[]> GetImagesForPost(int postId) throws IOException {
+    public List<byte[]> getImagesForPost(int postId) throws IOException {
 
         //mock object just gets random files to simulate dao postId not actually used
         List<byte[]> images = new ArrayList<byte[]>();
